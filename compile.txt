@@ -1,0 +1,13 @@
+/* 
+compile with -g to collect debugging info needed for Valgrind ( -lm links the math library): 
+gcc -g bucket_sort.c list.c -lm
+
+run with Valgrind:
+valgrind --leak-check=full ./a.out
+
+On some systems, but not all, you can also use the --show-leak-kinds=all flag:
+valgrind --leak-check=full --show-leak-kinds=all ./a.out
+
+run without Valgrind:
+./a.out
+*/
